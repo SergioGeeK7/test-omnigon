@@ -13,7 +13,7 @@ export const getSocialFeedData = page => (dispatch) => {
       isLoading: true,
     },
   });
-  fetch(`${feedUrl}?limit=${limit}`)
+  return fetch(`${feedUrl}?limit=${limit}`)
     .then(data => data.json())
     .then((data) => {
       dispatch({
@@ -22,7 +22,7 @@ export const getSocialFeedData = page => (dispatch) => {
           isLoading: false,
         },
       });
-      dispatch({
+      return dispatch({
         type: GET_DATA_SOCIAL_FEED,
         payload: {
           data,
@@ -35,5 +35,5 @@ export const refreshSocialFetch = () => (dispatch) => {
   dispatch({
     type: CLEAR_DATA_SOCIAL_FEED,
   });
-  getSocialFeedData(1)(dispatch);
+  return getSocialFeedData(1)(dispatch);
 };

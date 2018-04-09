@@ -2,7 +2,9 @@ import { GET_DATA_SOCIAL_FEED, CLEAR_DATA_SOCIAL_FEED, TOGGLE_LOADING_INDICATOR_
 import toLocalTime from '../helpers/toLocalTime';
 import { avatarUri } from '../../config.json'; // an avatar just for the sake of the example
 
-export default (state = { isLoading: false, data: [] }, action) => {
+export const defaultState = { isLoading: false, data: [] };
+
+export default (state = defaultState, action) => {
   switch (action.type) {
     case GET_DATA_SOCIAL_FEED: {
       const data = action.payload.data.slice(state.data.length).reduce((array, current) => {

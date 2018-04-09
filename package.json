@@ -22,7 +22,10 @@
     "test": "jest"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "setupFiles": [
+      "./jestMockFetch.js"
+    ]
   },
   "dependencies": {
     "expo": "^26.0.0",
@@ -31,6 +34,7 @@
     "react-native": "0.54.0",
     "react-redux": "^5.0.7",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "redux-mock-store": "^1.5.1"
   }
 }

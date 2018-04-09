@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`socialFeedActions Get social feed data ACTION 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "isLoading": true,
+    },
+    "type": "TOGGLE_LOADING_INDICATOR_SOCIAL_FEED",
+  },
+  Object {
+    "payload": Object {
+      "isLoading": false,
+    },
+    "type": "TOGGLE_LOADING_INDICATOR_SOCIAL_FEED",
+  },
+  Object {
+    "payload": Object {
+      "data": Object {},
+    },
+    "type": "GET_DATA_SOCIAL_FEED",
+  },
+]
+`;
+
+exports[`socialFeedActions refresh social feed ACTION 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "isLoading": true,
+    },
+    "type": "TOGGLE_LOADING_INDICATOR_SOCIAL_FEED",
+  },
+  Object {
+    "payload": Object {
+      "isLoading": false,
+    },
+    "type": "TOGGLE_LOADING_INDICATOR_SOCIAL_FEED",
+  },
+  Object {
+    "payload": Object {
+      "data": Object {},
+    },
+    "type": "GET_DATA_SOCIAL_FEED",
+  },
+  Object {
+    "type": "CLEAR_DATA_SOCIAL_FEED",
+  },
+  Object {
+    "payload": Object {
+      "isLoading": true,
+    },
+    "type": "TOGGLE_LOADING_INDICATOR_SOCIAL_FEED",
+  },
+  Object {
+    "payload": Object {
+      "isLoading": false,
+    },
+    "type": "TOGGLE_LOADING_INDICATOR_SOCIAL_FEED",
+  },
+  Object {
+    "payload": Object {
+      "data": Object {},
+    },
+    "type": "GET_DATA_SOCIAL_FEED",
+  },
+]
+`;
