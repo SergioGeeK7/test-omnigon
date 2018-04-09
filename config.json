@@ -1,0 +1,6 @@
+{
+  "feedUrl": "http://api.massrelevance.com/MassRelDemo/kindle.json",
+  "numerOfPost": 10,
+  "updateInterval": 20000,
+  "avatarUri": "https://cdn.iconscout.com/public/images/icon/free/png-128/avatar-user-boy-man-32442f8a928dac67-128x128.png"
+}
